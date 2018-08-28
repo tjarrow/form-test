@@ -31,10 +31,6 @@ input:focus {
   outline: none;
 }
 
-input::placeholder {
-  left: 5px;
-}
-
 textarea {
   margin: 0 auto;
   margin-bottom: 30px;
