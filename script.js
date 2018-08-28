@@ -34,12 +34,13 @@ $(document).ready(function() {
 				}
 			});
 
-			$("form").submit(function() {
-				if ((pattern1.test($("#email").val())) && (pattern2.test($("#phone").val()))) {
-						window.location.href = "https://google.com";
-					return true;
-				} else return false;
-
-			});
+			$("#submit_btn").click(function(e) {
+					if ((pattern1.test($("#email").val())) && (pattern2.test($("#phone").val()))) {
+							e.preventDefault();
+							$("form").submit();
+							window.location.replace('https://google.com');
+					}
+					return false;
+				});
 
 		});
