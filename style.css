@@ -1,0 +1,59 @@
+body {
+  background: #91ccd4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+fieldset {
+  margin-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  width: 150px;
+  border: none;
+}
+
+input {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  height: 40px;
+  border: none;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  left: 5px;
+}
+
+textarea {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 170px;
+}
+
+#valid-mail, #valid-phone {
+  position: absolute;
+  margin-top: -23px;
+  color: #b40000;
+  font-size: 13px;
+}
+
+#submit {
+  width: 180px;
+  color: white;
+  background: #0099da;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
